@@ -19,4 +19,3 @@ def sorted_list(this_list):
 
     
 
-print(sorted_list([12, 43, 2, 9, 2, 4]))
