@@ -61,6 +61,6 @@ first_list.add_to_end('C++')
 first_list.add_to_end('Java')
 first_list.add('Python')
 first_list.add('PHP')
-# first_list.remove_item()
+first_list.remove_item()
 first_list.check_list()
 
