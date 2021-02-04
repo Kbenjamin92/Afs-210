@@ -8,7 +8,6 @@ class Node:
 
 # Sorting the list seperating the child nodes
     def add(self, data):
-       
         if (self.data):
             for i in data:
                 if (self.data == i):
@@ -30,23 +29,43 @@ class Node:
         else:
             self.data = data
 
-
+# order the left child node
     def display_left_tree(self):
-        for left_item in self.left_container:
-            parent_node = 2
-            if (left_item == parent_node):
-                print(left_item)
-            elif (left_item < parent_node):
-                print(left_item)
+        parent_node = 2
+        for i in self.left_container:
+            if (i == parent_node):
+                print(i)
             else:
-                print(left_item)
-            return
+                pass
+           
+        for left_item in self.left_container:
+                if (left_item < parent_node):
+                    print(left_item)
+                elif (left_item > parent_node):
+                    print(left_item)
+
+# order the right child node
+    def display_right_tree(self):
+        parent_node = 6
+        for i in self.right_container:
+            if (i == parent_node):
+                print(i)
+            else:
+                pass
+           
+        for right_item in self.right_container:
+                if (right_item < parent_node):
+                    print(right_item)
+                elif (right_item > parent_node):
+                    print(right_item)
         
-
-
-
+        print(None)
+            
+        
 
 root = Node(4)
 root.add([1,2,3,4,5,6,7])
 root.display_left_tree()
+root.display_right_tree()
+
 
